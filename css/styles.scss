@@ -17,11 +17,14 @@ $font-text: 'Montserrat', sans-serif;
 
 $site-colors: ("site-blue": #028EEF, "site-green" : #00CC00);
 
-//Main Header
+// Globals
 
 body {
     margin: 0;
 }
+
+//Main Header
+
 
 .header {
     display: flex;
@@ -61,5 +64,38 @@ body {
         &:hover {
             color: map-get($site-colors, "site-green");
         }
+    }
+}
+
+//main
+.main {
+    margin:0 15%
+}
+
+//about us
+.about-us {
+    &__title {
+        text-align: center;
+        color: map-get($site-colors, "site-green");
+        font-family: $font-title;
+        text-transform: uppercase;
+        font-size: 24;
+    }
+
+    &__text {
+        text-align: center;
+        font-family: $font-text;
+    }
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    &__img {
+        max-width: 80%;
+        height: auto;
+        align-self: center;
+        margin: auto;
     }
 }
