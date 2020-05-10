@@ -208,13 +208,19 @@ body {
       align-self: flex-start;
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 20%;
+  width: 30%;
   font-family: "Montserrat", sans-serif;
   -webkit-appearance: none;
   border: none;
   font-weight: 700;
   padding: 1em 2em;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .user-form__input--submit {
+    width: 100%;
+  }
 }
 
 .user-form__input--submit:hover {
