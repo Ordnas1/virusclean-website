@@ -44,42 +44,62 @@
 
     <footer class="footer">
         <address class="address">
+            <h2 class="address__section-title">Ubíquenos</h2>
             <section class="address__physical">
-                <h2 class="address__title">Dirección</h2>
+                <i class="fas fa-map-marker-alt fa-4x address__fa"></i>
+                <h3 class="address__title">Dirección</h3>
                 <ul class="address__list">
                     <li class="address__element">Voluptas quibusdam voluptatibus quia, reiciendis laudantium pariatur. Asperiores mollitia ex omnis eaque. </li>
                 </ul>
             </section>
             <section class="address__phone">
-                <h2 class="address__title">Telefono</h2>
+                <i class="fas fa-phone-alt fa-4x address__fa"></i>
+                <h3 class="address__title">Telefono</h3>
                 <ul class="address__list">
                     <li class="address__element">+511 996 785 785</li>
                     <li class="address__element">+512 987 456 123</li>
                 </ul>
             </section>
             <section class="address__email">
-                <h2 class="address__title">Correo Electrónico</h2>
+                <i class="fas fa-envelope fa-4x address__fa"></i>
+                <h3 class="address__title">Correo Electrónico</h3>
                 <ul class="address__list">
                     <li class="address__element">lorem@ipsum.dolot.pe</li>
                 </ul>
             </section>
         </address>
         <form action="" class="user-form">
+            <h2 class="user-form__section-title">Contactenos</h2>
             <div class="user-form__row">
-                <input type="text" name="fname" id="fname" class="user-form__input">
-                <input type="text" name="lname" id="lname" class="user-form__input"></div>
+                <input type="text" 
+                       name="fname" 
+                       id="fname" 
+                       class="user-form__input user-form__input--name"
+                       placeholder="Nombres"
+                       pattern="[a-zA-Z]"
+                       required>
+                <input type="text" 
+                       name="lname" 
+                       id="lname" 
+                       class="user-form__input user-form__input--name"
+                       placeholder="Apellidos"
+                       pattern="[a-zA-Z]"
+                       required></div>
             <div class="user-form__row">
-                <input class="user-form__input" type="email" name="email" id="email">
+                <input class="user-form__input" type="email" name="email" id="email" placeholder="Correo">
             </div>
             <div class="user-form__row">
-                <input class="user-form__input" type="tel" name="cellphone" id="cellphone">
+                <input class="user-form__input" type="tel" name="cellphone" id="cellphone" placeholder="Telefono">
             </div>
             <div class="user-form__row">
-                <textarea name="comments" id="comments" cols="30" rows="10" class="user-form__input"></textarea>
+                <textarea name="comments" id="comments" cols="30" rows="10" class="user-form__input" placeholder="Escriba su mensaje"></textarea>
             </div>
+            <input type="submit" value="Enviar" class="user-form__input user-form__input--submit">
         </form>
     </footer>
 
 </body>
 
+
+<script src="https://kit.fontawesome.com/62433110b3.js" crossorigin="anonymous"></script>
 </html>
