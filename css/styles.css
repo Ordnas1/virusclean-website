@@ -8,6 +8,16 @@
   src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
   margin: 0;
 }
@@ -77,12 +87,45 @@ body {
   color: #00CC00;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .about-us__text {
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.5rem;
+}
+
+.about-us__text--em {
+  font-weight: 700;
+}
+
+.services {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.services__title {
+  font-family: "Roboto", sans-serif;
+}
+
+.services__list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  line-height: 1.5rem;
+}
+
+.services__list {
+  padding: 0;
+}
+
+.services__list-elem {
+  padding: 0;
+  margin: 10% 0;
+  text-align: center;
 }
 
 .img-grid {
@@ -116,10 +159,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5% 15% 3%;
+  padding: 5% 15%;
   background-color: #028EEF;
   font-family: "Montserrat", sans-serif;
   color: white;
+  height: 100vh;
 }
 
 @media screen and (max-width: 1150px) {

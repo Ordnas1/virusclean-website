@@ -34,6 +34,13 @@ $site-colors: ("site-blue": #028EEF,
 
 }
 
+* {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
 
 
 body {
@@ -96,12 +103,46 @@ body {
         color: map-get($site-colors, "site-green");
         font-family: $font-title;
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     &__text {
         text-align: center;
         font-family: $font-text;
+        line-height: 1.5rem;
+
+        &--em {
+            font-weight: 700;
+        }
+    }
+}
+
+
+// services
+
+.services {
+    text-align: center;
+    font-family: $font-text;    
+
+    &__title {
+        font-family: $font-title;
+    }
+
+    &__list-container {
+        display: flex;
+        justify-content: space-around;
+        line-height: 1.5rem;
+    }
+
+    
+    &__list {
+        padding: 0;
+    }
+
+    &__list-elem {
+        padding: 0;
+        margin: 10% 0;
+        text-align: center;
     }
 }
 
@@ -123,16 +164,18 @@ body {
         height: auto;
         margin: auto;
     }
+
 }
 
 // footer 
 
 .footer {
     display: flex;
-    padding: 5% 15% 3%;
+    padding: 5% 15%;
     background-color: map-get($site-colors, "site-blue");
     font-family: $font-text;
     color: white;
+    height: 100vh;
 
     @include responsive(1150px) {
         flex-direction: column;

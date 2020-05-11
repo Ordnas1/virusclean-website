@@ -14,11 +14,11 @@
 
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__listelem"><a href="" class="header__listlink header__listlink--current">Inicio</a>
+                <li class="header__listelem"><a href="" class="header__listlink">Inicio</a>
                 </li>
-                <li class="header__listelem"><a href="" class="header__listlink">Servicio</a></li>
-                <li class="header__listelem"><a href="" class="header__listlink">Galería de Imagenes</a></li>
-                <li class="header__listelem"><a href="" class="header__listlink">Contacto</a></li>
+                <li class="header__listelem"><a href="#servicio" class="header__listlink">Servicio</a></li>
+                <li class="header__listelem"><a href="#img_grid" class="header__listlink">Galería de Imagenes</a></li>
+                <li class="header__listelem"><a href="#contacto" class="header__listlink">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,14 +35,32 @@
                 tempora, fugiat ea cupiditate dolorum!</p>
             <p class="about-us__text about-us__text--em">¡Ven y cotíza con nosotros!</p>
         </section>
-        <section class="img-grid">
+        <section id="img_grid" class="img-grid">
             <img class="img-grid__img" src="https://via.placeholder.com/528x960">
             <img class="img-grid__img" src="https://via.placeholder.com/528x960">
             <img class="img-grid__img" src="https://via.placeholder.com/528x960">
         </section>
+        <section id="servicio" class="services">
+            <h2 class="services__title">Nuestros servicios</h2>
+            <p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe velit libero 
+                distinctio sint est odit at error delectus, laboriosam iste! Aut reprehenderit in vel, architecto eaque 
+                numquam non enim?</p>
+                <div class="services__list-container">
+                    <ul class="services__list">
+                        <ul class="services__list-elem">Servicio 1</ul>
+                        <ul class="services__list-elem">Servicio 2</ul>
+                        <ul class="services__list-elem">Servicio 3</ul>
+                    </ul>
+                    <ul class="services__list">
+                        <ul class="services__list-elem">Servicio 4</ul>
+                        <ul class="services__list-elem">Servicio 5</ul>
+                        <ul class="services__list-elem">Servicio 6</ul>
+                    </ul>
+                </div>
+        </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contacto" class="footer">
         <address class="address">
             <h2 class="address__section-title">Ubíquenos</h2>
             <section class="address__physical">
