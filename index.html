@@ -86,7 +86,7 @@
                 </ul>
             </section>
         </address>
-        <form action="" class="user-form">
+        <form action="send-form.php" class="user-form" method="POST">
             <h2 class="user-form__section-title">Contactenos</h2>
             <div class="user-form__row">
                 <input type="text" 
@@ -94,14 +94,14 @@
                        id="fname" 
                        class="user-form__input user-form__input--name"
                        placeholder="Nombres"
-                       pattern="[a-zA-Z]"
+                       pattern="[a-zA-Z]+"
                        required>
                 <input type="text" 
                        name="lname" 
                        id="lname" 
                        class="user-form__input user-form__input--name"
                        placeholder="Apellidos"
-                       pattern="[a-zA-Z]"
+                       pattern="[a-zA-Z]+"
                        required></div>
             <div class="user-form__row">
                 <input class="user-form__input" type="email" name="email" id="email" placeholder="Correo">
