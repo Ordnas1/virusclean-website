@@ -48,13 +48,14 @@
     }
 }
 
-if(IsInjected($visitor_email))
+if(IsInjected($email))
 {
     echo "Bad email value!";
     exit;
 }
 
 
-    mail($to, $email_subject, $email_body, $headers);
+  mail($to, $email_subject, $email_body, $headers);
+    
 
 ?>
