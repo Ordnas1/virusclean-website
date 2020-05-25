@@ -245,11 +245,16 @@ body {
 
 .about-us__text--em {
   font-weight: 700;
+  font-style: normal;
 }
 
 .services {
   text-align: center;
   font-family: "Montserrat", sans-serif;
+}
+
+.services__desc {
+  line-height: 1.5rem;
 }
 
 .services__title {
