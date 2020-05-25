@@ -56,7 +56,9 @@ if(IsInjected($email))
 
 
   mail($to, $email_subject, $email_body, $headers);
-  echo "Gracias por escribirnos, en seguida está regresando";
+  
 ?>
 
-<meta http-equiv="refresh" content="2;url=index.html">
+<div class="msg" style="display:flex; justify-content: center; align-items: center; height: 100vh;">
+<p style="font-size:28px; font-family:'Arial', sans-serif; "a>Gracias por escribirnos, en seguida está regresando</p></div>
+<meta http-equiv="refresh" content="3;url=index.html">
