@@ -54,11 +54,9 @@ body {
 
 .whatsapp {
     position: fixed;
-    bottom: 1%;
+    bottom: 2%;
     left: 1%;
-    &__img {
-        
-    }
+    
 }
 
 // Modal box
@@ -126,6 +124,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+
+    &___logo {
+        display: none;
+    }
 
     &__nav {
         background-color: map-get($site-colors, "site-blue");

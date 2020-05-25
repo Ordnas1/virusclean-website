@@ -8,7 +8,7 @@
     $comments = $_POST['comments'];
 
     //Email data de envio
-    $email_from = 'sandromarcelo.peirano@gmail.com';
+    $email_from = 'ventas@virusclean.pe';
     $email_subject = 'Nuevo formulario enviado';
     $email_body = "Ha recibido un nuevo mensaje.\n" .
                     "Nombres: $fname\n".
@@ -18,7 +18,7 @@
                     "Mensaje:\n $comments";
 
     // Envio de email
-    $to = 'sandromarcelo.peirano@gmail.com';
+    $to = 'ventas@virusclean.pe';
     $headers = "From: $email_from \r\n";
     $headers .= "Reply-to $email \r\n";
 
