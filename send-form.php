@@ -56,6 +56,7 @@ if(IsInjected($email))
 
 
   mail($to, $email_subject, $email_body, $headers);
-  
-
+  echo "Gracias por escribirnos, en seguida está regresando";
 ?>
+
+<meta http-equiv="refresh" content="2;url=index.html">

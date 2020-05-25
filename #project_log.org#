@@ -1,12 +1,24 @@
 
+* Credenciales FTP/SFTP
+** Virusclean.pe
+*** virusclean.pe  
+*** virusclean@virusclean.pe
+*** sandro2012
+** Alpolo.com.pe
+*** alpolo.com.pe
+*** alpoloco
+*** nS)K14PIp!ke94
+
 * Cambios pendientes al diseño
 ** DONE Agregar <a /> al datos de contacto [3/3]
    CLOSED: [2020-05-25 Mon 17:56]
    - [X] <a> mailto al correo
    - [X] <a> telefono de celular
    - [X] enlazar dirección con google maps
-** TODO Agrega a la descripción (SOMOS UNA EMPRESA AUTORIZADA POR EL MINEDU)
-** TODO Agrandar tamaño de letra del navbar en mobiles S
+** DONE Agrega a la descripción (SOMOS UNA EMPRESA AUTORIZADA POR EL MINEDU)
+   CLOSED: [2020-05-25 Mon 18:01]
+** DONE Agrandar tamaño de letra del navbar en mobiles S
+   CLOSED: [2020-05-25 Mon 18:18]
 ** TODO Agregar un mensaje al sendform.php y redireccionar al inicio
 ** TODO Agregat HTTPS
 ** TODO Agrega fotos del carrousel con la máquina nueva
