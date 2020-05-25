@@ -1,0 +1,11 @@
+
+* Cambios pendientes al diseño
+** TODO Agregar <a /> al datos de contacto [0/3]
+   - [ ] <a> mailto al correo
+   - [ ] <a> telefono de celular
+   - [ ] enlazar dirección con google maps
+** TODO Agrega a la descripción (SOMOS UNA EMPRESA AUTORIZADA POR EL MINEDU)
+** TODO Agrandar tamaño de letra del navbar en mobiles S
+** TODO Agregar un mensaje al sendform.php y redireccionar al inicio
+** TODO Agregat HTTPS
+** TODO Agrega fotos del carrousel con la máquina nueva

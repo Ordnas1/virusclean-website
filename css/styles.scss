@@ -347,6 +347,15 @@ body {
         list-style-type: none;
         line-height: 1.5em;
     }
+
+    &__anchor {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .user-form {

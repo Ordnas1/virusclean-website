@@ -365,6 +365,15 @@ body {
   line-height: 1.5em;
 }
 
+.address__anchor {
+  text-decoration: none;
+  color: white;
+}
+
+.address__anchor:hover {
+  text-decoration: underline;
+}
+
 .user-form {
   -webkit-box-flex: 2;
       -ms-flex: 2;
