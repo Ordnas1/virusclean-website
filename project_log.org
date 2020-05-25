@@ -1,10 +1,12 @@
 
 * Cambios pendientes al diseño
-** TODO Agregar <a /> al datos de contacto [0/3]
-   - [ ] <a> mailto al correo
-   - [ ] <a> telefono de celular
-   - [ ] enlazar dirección con google maps
-** TODO Agrega a la descripción (SOMOS UNA EMPRESA AUTORIZADA POR EL MINEDU)
+** DONE Agregar <a /> al datos de contacto [3/3]
+   CLOSED: [2020-05-25 Mon 17:56]
+   - [X] <a> mailto al correo
+   - [X] <a> telefono de celular
+   - [X] enlazar dirección con google maps
+** DONE Agrega a la descripción (SOMOS UNA EMPRESA AUTORIZADA POR EL MINEDU)
+   CLOSED: [2020-05-25 Mon 18:01]
 ** TODO Agrandar tamaño de letra del navbar en mobiles S
 ** TODO Agregar un mensaje al sendform.php y redireccionar al inicio
 ** TODO Agregat HTTPS

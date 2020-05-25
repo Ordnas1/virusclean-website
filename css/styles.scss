@@ -156,7 +156,7 @@ body {
         color: white;
 
         @include responsive(530px) {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
 
         &--current {
