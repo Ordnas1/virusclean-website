@@ -20,6 +20,73 @@
 
 body {
   margin: 0;
+  width: 100vw;
+  position: relative;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+}
+
+.modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal__content {
+  background-color: #028EEF;
+  margin: 15% auto;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  padding: .8%;
+}
+
+.modal__title {
+  color: #00CC00;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal__text {
+  color: white;
+}
+
+.modal__text--em {
+  font-weight: bold;
+  color: #00CC00;
+  font-style: normal;
+}
+
+.modal__text--bottom {
+  font-weight: bold;
+}
+
+.modal__close {
+  color: #aaa;
+  float: right;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.modal__close:hover, .modal__close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header {
@@ -70,6 +137,12 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 530px) {
+  .header__listlink {
+    font-size: 0.7rem;
+  }
+}
+
 .header__listlink--current {
   color: #00CC00;
 }
@@ -118,6 +191,12 @@ body {
 .carousel__img {
   width: 100%;
   height: 620px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__img {
+    height: 280px;
+  }
 }
 
 .carousel__btn-prev, .carousel__btn-next {
@@ -200,8 +279,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
   gap: 1rem;
   margin: 5% 0;
 }
@@ -213,10 +292,24 @@ body {
   }
 }
 
+@media screen and (max-width: 530px) {
+  .img-grid {
+    -ms-grid-columns: 220px;
+        grid-template-columns: 220px;
+  }
+}
+
 .img-grid__img {
-  max-width: 80%;
+  width: 100%;
   height: auto;
   margin: auto;
+}
+
+@media screen and (max-width: 530px) {
+  .img-grid__img {
+    width: 220px;
+    height: auto;
+  }
 }
 
 .footer {
@@ -227,7 +320,7 @@ body {
   background-color: #028EEF;
   font-family: "Montserrat", sans-serif;
   color: white;
-  height: 100vh;
+  height: auto;
 }
 
 @media screen and (max-width: 1150px) {

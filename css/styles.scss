@@ -46,7 +46,77 @@ $site-colors: ("site-blue": #028EEF,
 
 body {
     margin: 0;
+    width: 100vw;
+    position: relative;
 }
+
+//Whatsapp box
+
+.whatsapp {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    &__img {
+        
+    }
+}
+
+// Modal box
+
+.modal {
+    //display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    &__content {
+        background-color: map-get($site-colors, "site-blue");
+        margin: 15% auto;
+        width: 80%;
+        font-family: $font-text;
+        padding: .8%;
+        
+    }
+
+    &__title {
+        color: map-get($site-colors, "site-green");
+        font-family: $font-title;
+    }
+
+    &__text {
+        color: white;
+
+        &--em {
+            font-weight: bold;
+            color: map-get($site-colors, "site-green");
+            font-style: normal;
+        }
+
+        &--bottom {
+            font-weight: bold;
+        }
+    }
+
+    &__close {
+        color: #aaa;
+        float: right;
+        font-size: 2.2rem;
+        font-weight: bold;
+
+        &:hover, &:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
 
 //Main Header
 
@@ -81,6 +151,10 @@ body {
         font-family: $font-title;
         text-decoration: none;
         color: white;
+
+        @include responsive(530px) {
+            font-size: 0.7rem;
+        }
 
         &--current {
             color: map-get($site-colors, "site-green");
@@ -119,6 +193,10 @@ body {
     &__img {
         width: 100%;
         height: 620px;
+
+        @include responsive(768px) {
+            height: 280px;
+        }
     }
 
     &__btn-prev, &__btn-next {
@@ -198,19 +276,27 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
-    align-content: space-around;
+    align-content: center;
     gap: 1rem;
-
     margin: 5% 0;
 
     @include responsive(1150px) {
         grid-template-columns: 528px;
     }
 
+    @include responsive(530px) {
+        grid-template-columns: 220px;
+    }
+
     &__img {
-        max-width: 80%;
+        width: 100%;
         height: auto;
         margin: auto;
+
+        @include responsive(530px){
+            width: 220px;
+            height: auto;
+        }
     }
 
 }
@@ -223,7 +309,7 @@ body {
     background-color: map-get($site-colors, "site-blue");
     font-family: $font-text;
     color: white;
-    height: 100vh;
+    height: auto;
 
     @include responsive(1150px) {
         flex-direction: column;
