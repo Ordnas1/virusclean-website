@@ -19,6 +19,8 @@
    CLOSED: [2020-05-25 Mon 18:01]
 ** DONE Agrandar tamaño de letra del navbar en mobiles S
    CLOSED: [2020-05-25 Mon 18:18]
-** TODO Agregar un mensaje al sendform.php y redireccionar al inicio
-** TODO Agregat HTTPS
+** DONE Agregar un mensaje al sendform.php y redireccionar al inicio
+   CLOSED: [2020-05-25 Mon 18:53]
+** DONE Agregat HTTPS
+   CLOSED: [2020-05-25 Mon 19:02]
 ** TODO Agrega fotos del carrousel con la máquina nueva
