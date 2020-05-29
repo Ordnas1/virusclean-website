@@ -105,8 +105,16 @@ body {
           align-items: center;
 }
 
-.header___logo {
-  display: none;
+.header__logo {
+  width: 500px;
+  height: 150px;
+}
+
+@media screen and (max-width: 540px) {
+  .header__logo {
+    width: 250px;
+    height: 150px;
+  }
 }
 
 .header__nav {

@@ -126,8 +126,15 @@ body {
     align-items: center;
     
 
-    &___logo {
-        display: none;
+    &__logo {
+        width: 500px;
+        height: 150px;
+
+        @include responsive(540px) {
+            width: 250px;
+            height: 150px;
+        }
+
     }
 
     &__nav {
