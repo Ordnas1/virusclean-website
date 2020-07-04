@@ -220,6 +220,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .product-grid__cell {
@@ -242,7 +243,7 @@ body {
 }
 
 .product-grid__img {
-  max-width: 100%;
+  width: 360px;
   height: auto;
 }
 
@@ -264,7 +265,7 @@ body {
 }
 
 .product-grid__price {
-  margin: 1% 0;
+  margin: 0.3rem 0;
   font-size: 1.25rem;
 }
 
@@ -283,6 +284,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0.5rem 0;
 }
 
 .product-grid__link {
@@ -305,7 +307,7 @@ body {
 
 .product-grid__desc {
   width: 310px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.7rem;
   text-align: justify;
   margin: 0.3rem 0;
