@@ -17,15 +17,15 @@ function showSlides() {
 
 // Modal Box
 
-let modal = document.getElementById("modalbox")
-let modalClose = document.getElementsByClassName("modal__close")[0]
+// let modal = document.getElementById("modalbox")
+// let modalClose = document.getElementsByClassName("modal__close")[0]
 
-modalClose.onclick = function() {
-    modal.style.display = "none"
-}
+// modalClose.onclick = function() {
+//     modal.style.display = "none"
+// }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none"
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none"
+//     }
+// }
